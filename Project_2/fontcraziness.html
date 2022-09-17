@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .fontsize {
+            /*absolue fonts*/
+            font-size: 48px;
+        }
+
+        /*relative fonts; 2 times the default size (generally 16 px) on the browser*/
+        /* 32px * 0.0625 = 2rem */
+        .remsize2 {
+            font-size: 2rem;
+        }
+
+        .remsize3 {
+            font-size: 3rem;
+        }
+
+        /*em compounds up!*/
+        .emsize2 {
+            font-size: 2em;
+        }
+
+        .emsize3 {
+            font-size: 3em;
+        }
+
+        .emsize4 {
+            font-size: 4em;
+        }
+    </style>
+</head>
+
+<body>
+    <p>Daniel Scott</p>
+
+    <p class="fontsize">48px</p>
+    <p class="remsize3">3rem</p>
+    <p class="emsize3">3em</p>
+    <p class="emsize2">2em</p>
+    <p class="emsize4">4em</p>
+
+    <div class="emsize2">
+        Goodness
+        <p class="emsize2">this builds up to 4em!</p>
+    </div>
+
+    <div class="remsize3">
+        Didn't
+        <p class="remsize2">build up!</p>
+    </div>
+</body>
+
+</html>
